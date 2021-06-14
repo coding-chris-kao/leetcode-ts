@@ -37,7 +37,7 @@ describe('validMountainArray ', () => {
     expect(res).toBe(false)
   })
 
-  test('case 6', () => {
+  test('case 7', () => {
     const arr = [1, 1, 1, 1, 1, 1, 1, 2, 1]
     const res = validMountainArray(arr)
     expect(res).toBe(false)
