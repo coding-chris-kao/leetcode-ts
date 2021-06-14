@@ -1,6 +1,6 @@
 module.exports = {
-  coverageDirectory: "coverage",
+  coverageDirectory: 'coverage',
   preset: 'ts-jest',
-  testEnvironment: "node",
-  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
-};
+  testEnvironment: 'node',
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
+}
