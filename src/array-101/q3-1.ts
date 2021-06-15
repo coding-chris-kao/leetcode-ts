@@ -1,4 +1,4 @@
-export function removeElement(nums: number[], val: number): number {
+function removeElement(nums: number[], val: number): number {
   let found = 0
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] == val) {
@@ -15,3 +15,5 @@ export function removeElement(nums: number[], val: number): number {
   nums.length = nums.length - found
   return nums.length
 }
+
+export { removeElement }
