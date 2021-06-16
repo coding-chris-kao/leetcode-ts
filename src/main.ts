@@ -1,6 +1,6 @@
-import { checkIfExist } from './array-101/q4-1'
+import { createTree } from './models/TreeNode'
 
-const arr = [10, 2, 5, 3]
-const res = checkIfExist(arr)
+const arr = [10, null, 5, 3, 1, 2]
+const res = createTree(arr)
 
-console.log({ res })
+console.log(res?.right)
