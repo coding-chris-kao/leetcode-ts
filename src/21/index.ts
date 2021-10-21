@@ -2,7 +2,7 @@ import { ListNode } from '../models/ListNode'
 
 function mergeTwoLists(
   l1: ListNode | null,
-  l2: ListNode | null
+  l2: ListNode | null,
 ): ListNode | null {
   if (!l1 && !l2) return null
   if (!l2) return l1
