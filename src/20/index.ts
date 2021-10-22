@@ -1,16 +1,14 @@
 function isValid(s: string): boolean {
   const stack: string[] = []
-  const hash: any = {
+  const hash: { [key: string]: string } = {
     '(': ')',
     '[': ']',
     '{': '}',
   }
-
-  for (let i = 0; i < s.length; i++) {
-    const str = s[i]
-    if (str in hash) {
-      stack.push(str)
-    } else if (hash[stack[stack.length - 1]] == str) {
+  for (let bracket of s) {
+    if (bracket in hash) {
+      stack.push(hash[bracket])
+    } else if (stack[stack.length - 1] === bracket) {
       stack.pop()
     } else {
       return false
