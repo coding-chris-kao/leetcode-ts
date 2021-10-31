@@ -12,6 +12,3 @@ function wordPattern(pattern: string, s: string): boolean {
   }
   return true
 }
-
-const res = wordPattern('abba', 'dog cat cat fish')
-console.log(res)
