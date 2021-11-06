@@ -41,10 +41,3 @@ function orangesRotting(grid: number[][]): number {
   if (freshCount === 0) return time
   return -1
 }
-
-const res = orangesRotting([
-  [2, 1, 1],
-  [1, 1, 0],
-  [0, 1, 1],
-])
-console.log(res)
