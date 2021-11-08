@@ -7,3 +7,5 @@ function rob(nums: number[]): number {
   }
   return Math.max(sum1, sum2)
 }
+
+export {}
